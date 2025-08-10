@@ -16,7 +16,7 @@ const PreviewPage = lazy(() => import("./pages/PreviewPage"));
 const MyFormsPage = lazy(() => import("./pages/MyFormsPage"));
 
 // Factory to create theme in light/dark + density variants
-const buildTheme = (mode: "light" | "dark", dense: boolean) =>
+const buildTheme = (mode: "light" | "dark") =>
   createTheme({
     palette: {
       mode,
@@ -157,9 +157,9 @@ const buildTheme = (mode: "light" | "dark", dense: boolean) =>
             },
           },
           input: {
-            paddingTop: dense ? 6 : 12,
-            paddingBottom: dense ? 6 : 12,
-            fontSize: dense ? "0.85rem" : "1rem",
+            paddingTop: 12,
+            paddingBottom: 12,
+            fontSize: "1rem",
           },
         },
       },
@@ -175,9 +175,6 @@ const buildTheme = (mode: "light" | "dark", dense: boolean) =>
           root: {
             fontWeight: 500,
             borderRadius: 8,
-            height: dense ? 22 : undefined,
-            fontSize: dense ? "0.70rem" : undefined,
-            "& .MuiChip-label": { px: dense ? 1 : 2 },
           },
         },
       },
@@ -205,7 +202,7 @@ const buildTheme = (mode: "light" | "dark", dense: boolean) =>
 function App() {
   const [mode, setMode] = useState<"light" | "dark">("light");
   // const [dense, setDense] = useState(false);
-  const theme = useMemo(() => buildTheme(mode, dense), [mode, dense]);
+  const theme = useMemo(() => buildTheme(mode), [mode]);
 
   return (
     <Provider store={store}>
