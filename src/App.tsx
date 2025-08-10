@@ -204,7 +204,7 @@ const buildTheme = (mode: "light" | "dark", dense: boolean) =>
 // UI preference context (simple internal state)
 function App() {
   const [mode, setMode] = useState<"light" | "dark">("light");
-  const [dense, setDense] = useState(false);
+  // const [dense, setDense] = useState(false);
   const theme = useMemo(() => buildTheme(mode, dense), [mode, dense]);
 
   return (

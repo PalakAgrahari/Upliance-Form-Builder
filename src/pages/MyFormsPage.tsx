@@ -28,7 +28,7 @@ import {
   loadFormsFromStorage,
   deleteFormFromStorage,
 } from "../utils/localStorage";
-import { addSampleForms, clearAllForms } from "../utils/debugForms";
+// import { addSampleForms, clearAllForms } from "../utils/debugForms";
 
 const MyFormsPage: React.FC = () => {
   const dispatch = useDispatch();
