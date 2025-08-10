@@ -4,7 +4,7 @@ A modern form builder application built with React 19, TypeScript, Redux Toolkit
 
 ## 🚀 Live Demo
 
-**[https://upliance-form.vercel.app](https://upliance-form.vercel.app)**
+**[(https://uplianceai-form-builder.vercel.app/)](https://uplianceai-form-builder.vercel.app/)**
 
 ## ✨ Features
 
