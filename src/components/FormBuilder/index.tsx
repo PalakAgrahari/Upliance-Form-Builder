@@ -252,7 +252,7 @@ const FormBuilder: React.FC = () => {
         sx={{
           p: 3,
           mb: 2,
-          background: "linear-gradient(135deg, #6179f1 0%, #9f76c7 100%)",
+          background: "linear-gradient(135deg, #f2af77 0%, #836fcd 100%)",
           color: "white",
           borderRadius: 2,
         }}
